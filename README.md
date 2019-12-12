@@ -1,8 +1,8 @@
 # netlify-cms-editor-component-video
 
 This package provide a Video component for [Netlify CMS](https://www.netlifycms.org/) editor widget ready to drop in your Netlify CMS projects.
-[video-shortcode] plugin is used for video shortcode processing.
-    
+[Video shortcode](https://github.com/agrawalaayushi/gatsby-remark-video-shortcode) plugin is used for video shortcode processing in markdown.
+
 ---
 
 ## Installation
