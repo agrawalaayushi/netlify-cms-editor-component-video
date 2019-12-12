@@ -77,15 +77,15 @@ const video = {
     return `{{< Video url=${obj.url} control=${obj.control} loop=${obj.loop} autoplay=${obj.autoplay} muted=${obj.muted} height=${obj.height} width=${obj.width} poster=${obj.poster} >}}`;
   },
   toPreview: function(obj) {
-    return `<video width=${obj.width} height=${obj.height} ${
-      obj.control ? `controls` : `undefined`
-    }  ${obj.loop ? `loop` : `undefined`}  ${obj.muted && `muted`} ${
-      obj.autoplay ? `autoplay` : `undefined`
-    } poster=${obj.poster}>
+    return `<video width=${obj.width} height=${obj.height} ${obj.control ===
+      "true" && `controls`}  ${obj.loop === "true" && `loop`}  ${obj.muted ===
+      "true" && `muted`} ${obj.autoplay === "true" && `autoplay`} poster=${
+      obj.poster
+    }>
         <source src=${obj.url} type="video/webm"/>
         <source src=${obj.url} type="video/webm"/>
         <source src=${obj.url} type="video/mp4">
-        </video>`;
+        </video>`
   }
 };
 
