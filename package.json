@@ -1,0 +1,39 @@
+{
+  "name": "netlify-cms-editor-component-video",
+  "version": "1.0.0",
+  "description": "Video component for Netlify CMS editor widget",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "babel ./src --out-dir ./dist -s inline"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://source.golabs.io/asphalt/netlify-cms-editor-component-pill.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "netlify",
+    "netlify-cms",
+    "cms",
+    "editor",
+    "component",
+    "widget",
+    "video",
+    "media player"
+  ],
+  "author": "Aayushi Agrawal aayushi.agrawal13@gmail.com",
+  "files": [
+    "dist/*"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}
