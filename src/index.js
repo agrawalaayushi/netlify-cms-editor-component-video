@@ -1,7 +1,9 @@
 const video = {
-  label: "Video",
+   // Internal id of the component
   id: "video",
-  folder: "static/video",
+   // Visible label
+  label: "Video",
+  // Fields the user need to fill out when adding an instance of the component
   fields: [
     {
       label: "Video",
@@ -60,7 +62,9 @@ const video = {
       default: 300
     }
   ],
+  // Pattern to identify a block as being an instance of this component
   pattern: /^{{< Video url=(.*) control=(.*) loop=(.*) autoplay=(.*) muted=(.*) height=(.*) width=(.*) poster=(.*) >}}$/,
+   // Function to extract data elements from the regexp match
   fromBlock: match =>
     match && {
       url: match[1],
@@ -72,10 +76,12 @@ const video = {
       width: match[7],
       poster: match[8]
     },
+    // Function to create a text block from an instance of this component markdown page
   toBlock: function(obj) {
     if (obj && obj.autoplay) obj.muted = true;
     return `{{< Video url=${obj.url} control=${obj.control} loop=${obj.loop} autoplay=${obj.autoplay} muted=${obj.muted} height=${obj.height} width=${obj.width} poster=${obj.poster} >}}`;
   },
+  // Preview output for this component. Can either be a string or a React component
   toPreview: function(obj) {
     return `<video width=${obj.width} height=${obj.height} ${obj.control ===
       "true" && `controls`}  ${obj.loop === "true" && `loop`}  ${obj.muted ===
