@@ -30,7 +30,7 @@ npm install netlify-cms-editor-component-video gatsby-remark-video-shortcode --s
 Add to your CMS.js inside Netlify CMS project
 
 ```js
-import pill from 'netlify-cms-editor-component-video';
+import video from 'netlify-cms-editor-component-video';
 
 CMS.registerEditorComponent(video);
 ````

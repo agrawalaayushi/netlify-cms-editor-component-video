@@ -77,7 +77,6 @@ const video = {
     return `{{< Video url=${obj.url} control=${obj.control} loop=${obj.loop} autoplay=${obj.autoplay} muted=${obj.muted} height=${obj.height} width=${obj.width} poster=${obj.poster} >}}`;
   },
   toPreview: function(obj) {
-    console.log(obj);
     return `<video width=${obj.width} height=${obj.height} ${
       obj.control ? `controls` : `undefined`
     }  ${obj.loop ? `loop` : `undefined`}  ${obj.muted && `muted`} ${
