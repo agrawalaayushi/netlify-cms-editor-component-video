@@ -33,8 +33,7 @@
     "@babel/preset-env": "^7.6.0",
     "@babel/preset-react": "^7.0.0"
   },
-  "peerDependencies": {
+  "dependencies": {
     "gatsby-remark-video-shortcode": "1.0.1"
-  },
-  "dependencies": {}
+  }
 }
