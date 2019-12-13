@@ -21,8 +21,6 @@ npm install netlify-cms-editor-component-video gatsby-remark-video-shortcode --s
 1. Gatsby version >=2.17.15
 2. Gatsby Transformer Remark Plugin >=2.6.36
 
-````
-
 ---
 
 ## Usage
@@ -33,14 +31,14 @@ Add to your CMS.js inside Netlify CMS project
 import video from 'netlify-cms-editor-component-video';
 
 CMS.registerEditorComponent(video);
-````
+
+```
 
 ### Configuration
 
 ```js
 // In your gatsby-config.js
 plugins: [
-  `gatsby-plugin-sharp`,
   {
     resolve: `gatsby-transformer-remark`,
     options: {
