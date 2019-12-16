@@ -10,7 +10,7 @@ This package provide a Video component for [Netlify CMS](https://www.netlifycms.
 Run the following command using [npm](https://www.npmjs.com/):
 
 ```bash
-npm install netlify-cms-editor-component-video gatsby-remark-video-shortcode --save
+npm install --save netlify-cms-editor-component-video gatsby-remark-video-shortcode 
 
 ```
 
@@ -20,8 +20,6 @@ npm install netlify-cms-editor-component-video gatsby-remark-video-shortcode --s
 
 1. Gatsby version >=2.17.15
 2. Gatsby Transformer Remark Plugin >=2.6.36
-
----
 
 ## Usage
 
