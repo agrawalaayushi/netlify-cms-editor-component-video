@@ -13,15 +13,11 @@
   },
   "license": "MIT",
   "keywords": [
-    "netlify cms editor component video",
-    "netlify",
     "netlify-cms",
-    "cms",
     "editor",
     "component",
     "widget",
-    "video",
-    "media player"
+    "video"
   ],
   "author": "Aayushi Agrawal <aayushi.agrawal13@gmail.com>",
   "files": [
