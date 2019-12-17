@@ -13,7 +13,7 @@
   },
   "license": "MIT",
   "keywords": [
-    "netlify-cms",
+    "netlify cms",
     "editor",
     "component",
     "widget",
@@ -30,14 +30,6 @@
     "@babel/preset-react": "^7.0.0"
   },
   "dependencies": {
-    "gatsby-remark-video-shortcode": "^1.0.3",
-    "husky": "^3.1.0",
-    "prettier": "^1.19.1",
-    "pretty-quick": "^2.0.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
+    "gatsby-remark-video-shortcode": "^1.0.3"
   }
 }
