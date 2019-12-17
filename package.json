@@ -23,7 +23,7 @@
     "video",
     "media player"
   ],
-  "author": "Aayushi Agrawal aayushi.agrawal13@gmail.com",
+  "author": "Aayushi Agrawal <aayushi.agrawal13@gmail.com>",
   "files": [
     "dist/*"
   ],
